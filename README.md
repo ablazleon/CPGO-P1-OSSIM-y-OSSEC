@@ -15,6 +15,10 @@ En este repo, documentamos cómo hemos planteado realizar esta prática
 
 ![Submask](https://raw.githubusercontent.com/ablazleon/CPGO-P1-OSSIM-y-OSSEC/main/Screenshot%202021-03-15%20122106.png?token=AG4AHSRTHUZC3WEVH55B4Z3AJ5ETK)
 
+Gateway: 192.168.56.1
+
+Name server address: 192.168.56.1
+
 2- Prueba de funcionamiento del escenario
 
 3- Creación de directivas de correlación
