@@ -11,9 +11,9 @@ En este repo, documentamos cómo hemos planteado realizar esta prática
 
 ![Pregunta la ip de la subred](https://github.com/ablazleon/CPGO-P1-OSSIM-y-OSSEC/blob/main/Screenshot%202021-03-15%20122106.png)
 
-![Ver la ip de la red](https://raw.githubusercontent.com/ablazleon/CPGO-P1-OSSIM-y-OSSEC/main/Screenshot%202021-03-15%20124310.png)
+![Ver la ip de la red](https://github.com/ablazleon/CPGO-P1-OSSIM-y-OSSEC/blob/main/Screenshot%202021-03-15%20124310.png)
 
-![Submask](https://raw.githubusercontent.com/ablazleon/CPGO-P1-OSSIM-y-OSSEC/main/Screenshot%202021-03-15%20122106.png)
+![Submask](https://github.com/ablazleon/CPGO-P1-OSSIM-y-OSSEC/blob/main/Screenshot%202021-03-15%20124530.png)
 
 Gateway: 192.168.56.1
 
