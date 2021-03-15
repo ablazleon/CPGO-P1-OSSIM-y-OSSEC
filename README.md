@@ -19,6 +19,8 @@ Gateway: 192.168.56.1
 
 Name server address: 192.168.56.1
 
+Para configurar en bridge: settings => network => bridge
+
 2- Prueba de funcionamiento del escenario
 
 3- Creación de directivas de correlación
