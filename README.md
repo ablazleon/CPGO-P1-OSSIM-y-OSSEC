@@ -9,7 +9,7 @@ En este repo, documentamos cómo hemos planteado realizar esta prática
 
 1- Configurar escenario
 
-![Pregunta la ip de la subred](https://raw.githubusercontent.com/ablazleon/CPGO-P1-OSSIM-y-OSSEC/main/Screenshot%202021-03-15%20122106.png?token=AG4AHSWD3BG6ZKYY2WD7HNTAJ5D72)
+![Pregunta la ip de la subred](https://raw.githubusercontent.com/ablazleon/CPGO-P1-OSSIM-y-OSSEC/main/Screenshot%202021-03-15%20122106.png?token=AG4AHSWOQJQS2ISPBFG4EVTAJ5FA6)
 
 ![Ver la ip de la red](https://raw.githubusercontent.com/ablazleon/CPGO-P1-OSSIM-y-OSSEC/main/Screenshot%202021-03-15%20124310.png?token=AG4AHSWAS43XN3HDO2OM2CDAJ5EM4)
 
