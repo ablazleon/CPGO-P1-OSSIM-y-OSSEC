@@ -7,13 +7,17 @@ Autores:
 
 En este repo, documentamos cómo hemos planteado realizar esta prática
 
+# 1- Configurar escenario
+# 2- Prueba de funcionamiento del escenario
+# 3- Creación de directivas de correlació
+# 4- Configuración de agentes de operación
+
 1- Configurar escenario
 
-![Pregunta la ip de la subred](https://github.com/ablazleon/CPGO-P1-OSSIM-y-OSSEC/blob/main/Screenshot%202021-03-15%20122106.png)
+Se crea una subred para conerce el agente con OSSIM
 
-![Ver la ip de la red](https://github.com/ablazleon/CPGO-P1-OSSIM-y-OSSEC/blob/main/Screenshot%202021-03-15%20124310.png)
+https://www.brianlinkletter.com/2016/07/how-to-use-virtualbox-to-emulate-a-network/#:~:text=To%20connect%20two%20virtual%20machines,the%20Router%2D1%20virtual%20machine.
 
-![Submask](https://github.com/ablazleon/CPGO-P1-OSSIM-y-OSSEC/blob/main/Screenshot%202021-03-15%20124530.png)
 
 Gateway: 192.168.56.1
 
