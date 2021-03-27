@@ -34,6 +34,28 @@ E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), is an
 Que se soluciona así:
 https://itsfoss.com/could-not-get-lock-error/
 
+```
+sudo apt-get install software-properties-common
+sudo add-apt-repository ppa:oisf/suricata-stable
+sudo apt-get update
+
+sudo apt-get install suricata 
+```
+
+```
+# Add Apt sources.lst
+wget -q -O - https://updates.atomicorp.com/installers/atomic | sudo bash
+
+ # Update apt data
+ sudo apt-get update
+
+ # Server
+ sudo apt-get install ossec-hids-server
+
+# Agent
+sudo apt-get install ossec-hids-agent
+```
+
 2- Prueba de funcionamiento del escenario
 
 3- Creación de directivas de correlación
