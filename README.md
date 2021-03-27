@@ -18,17 +18,12 @@ Se crea una subred interna para conectar el agente con OSSIM, insparándonos en 
 
 Se cambia la ip del agente:
 
-```
-cat >> /etc/network/interfaces << EOF 
-auto enp0s8
-iface enp0s8 inet static
-   address 192.168.1.1
-   netmask 255.255.255.0
-up route add -net 192.168.0.0/16 gw 192.168.1.254 dev enp0s8
-```
+10.0.3.1
+255.255.255.0
+10.0.3.2:gw
 
 
-Gateway: 192.168.56.1
+Gateway: 10.0.3.2aluche
 
 Name server address: 192.168.56.1
 
