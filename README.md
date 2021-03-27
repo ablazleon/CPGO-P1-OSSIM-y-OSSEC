@@ -24,6 +24,16 @@ Name server address: 192.168.56.1
 
 Para configurar en bridge: settings => network => bridge
 
+Al descargar suricata parece este error:
+
+```
+E: Could not get lock /var/lib/dpkg/lock-frontend - open (11: Resource temporarily unavailable)
+E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), is another process using it?
+```
+
+Que se soluciona así:
+https://itsfoss.com/could-not-get-lock-error/
+
 2- Prueba de funcionamiento del escenario
 
 3- Creación de directivas de correlación
