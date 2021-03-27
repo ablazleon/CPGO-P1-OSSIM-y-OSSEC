@@ -16,6 +16,16 @@ En este repo, documentamos cómo hemos planteado realizar esta prática
 
 Se crea una subred interna para conectar el agente con OSSIM, insparándonos en la estrategia de este [tutorial](https://www.brianlinkletter.com/2016/07/how-to-use-virtualbox-to-emulate-a-network/#:~:text=To%20connect%20two%20virtual%20machines,the%20Router%2D1%20virtual%20machine).
 
+Se cambia la ip del agente:
+
+```
+cat >> /etc/network/interfaces << EOF 
+auto enp0s8
+iface enp0s8 inet static
+   address 192.168.1.1
+   netmask 255.255.255.0
+up route add -net 192.168.0.0/16 gw 192.168.1.254 dev enp0s8
+```
 
 
 Gateway: 192.168.56.1
@@ -55,6 +65,8 @@ wget -q -O - https://updates.atomicorp.com/installers/atomic | sudo bash
 # Agent
 sudo apt-get install ossec-hids-agent
 ```
+
+
 
 2- Prueba de funcionamiento del escenario
 
