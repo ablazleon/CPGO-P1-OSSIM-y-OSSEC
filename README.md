@@ -23,7 +23,7 @@ Se cambia la ip del agente:
 10.0.3.2:gw
 
 
-Gateway: 10.0.3.2aluche
+Gateway: 10.0.3.2
 
 Name server address: 192.168.56.1
 
