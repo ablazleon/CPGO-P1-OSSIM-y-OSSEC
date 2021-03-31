@@ -33,17 +33,17 @@ Servidor de dns:212.166.210.80
 
 - Se cambia la ip del agente:
 
-192.168.56.103
+192.168.1.103
 255.255.255.0
-192.168.56.101:gw
+192.168.1.101:gw
 
 Para que entre en fucnionamiento el adpatador se apaga y se enciende.
 
 - Se cambia la ip del servidor:
 
-Gateway: 192.168.56.101
+Gateway: 192.168.1.101
 
-Name server address: 192.168.56.102
+Name server address: 192.168.1.102
 
 Para configurar en bridge: settings => network => bridge
 
