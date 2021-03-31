@@ -142,13 +142,21 @@ wget -q -O - https://updates.atomicorp.com/installers/atomic | sudo bash
  # Update apt data
  sudo apt-get update
 
- # Server
- sudo apt-get install ossec-hids-server
-
 # Agent
 sudo apt-get install ossec-hids-agent
 ```
 
+Then, it is changed the ip in the agent ossec:
+
+```
+<!-- OSSEC example config -->
+
+<ossec_config>
+  <client>
+    <server-ip>192.168.1.103</server-ip>
+  </client>
+
+```
 
 
 2- Prueba de funcionamiento del escenario
