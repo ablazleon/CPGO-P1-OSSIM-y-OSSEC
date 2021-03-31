@@ -101,5 +101,3 @@ sudo apt-get install ossec-hids-agent
 
 4- Configuración de agentes de operación
 
-
-
