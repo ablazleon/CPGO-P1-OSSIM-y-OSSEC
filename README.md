@@ -14,20 +14,45 @@ En este repo, documentamos cómo hemos planteado realizar esta prática
 
 1- Configurar escenario
 
-Se crea una subred interna para conectar el agente con OSSIM, insparándonos en la estrategia de este [tutorial](https://www.brianlinkletter.com/2016/07/how-to-use-virtualbox-to-emulate-a-network/#:~:text=To%20connect%20two%20virtual%20machines,the%20Router%2D1%20virtual%20machine).
+## a. Configurar las direcciones IPs correspondientes tanto en la maquina agente como en la maquina servidor, para que tengan conectividad entre si.
 
-Se cambia la ip del agente:
+## b. Descargar el agente ossec para la maquina agente y realizar la configuración entre el agente y el servidor OSSEC para permitir el envío de logs
 
-10.0.3.1
+## c. Configurar correctamente el agente OSSEC en su correspondiente fichero de configuración, (indicando el formato de logs que debe monitorizar), y la ubicación del fichero fast.log donde Suricata deposita las alertas de las alarmas. (Sugerencia)Reiniciar el servidor ossec como el agente ossec, cada vez que se realice cambios.
+
+---------------
+
+## a. Configurar las direcciones IPs correspondientes tanto en la maquina agente como en la maquina servidor, para que tengan conectividad entre si.
+
+Primero, pensamos en crear una subred interna para conectar el agente con OSSIM, insparándonos en la estrategia de este [tutorial](https://www.brianlinkletter.com/2016/07/how-to-use-virtualbox-to-emulate-a-network/#:~:text=To%20connect%20two%20virtual%20machines,the%20Router%2D1%20virtual%20machine). Luego, intentamos directametne conectar las dos máquinas a la red local.
+
+- Se cambia la ip del adaptador ethernet de la máquina real:
+
+192.168.56.101
+Servidor de dns:212.166.210.80
+
+- Se cambia la ip del agente:
+
+192.168.56.103
 255.255.255.0
-10.0.3.2:gw
+192.168.56.101:gw
 
+Para que entre en fucnionamiento el adpatador se apaga y se enciende.
 
-Gateway: 10.0.3.2
+- Se cambia la ip del servidor:
 
-Name server address: 192.168.56.1
+Gateway: 192.168.56.101
+
+Name server address: 192.168.56.102
 
 Para configurar en bridge: settings => network => bridge
+
+Se realiza un ping y se abre el dashboard de ossim en el agetne, para comprobar que existe conectividad.
+
+## b. Descargar el agente ossec para la maquina agente y realizar la configuración entre el agente y el servidor OSSEC para permitir el envío de logs
+
+
+## c. Configurar correctamente el agente OSSEC en su correspondiente fichero de configuración, (indicando el formato de logs que debe monitorizar), y la ubicación del fichero fast.log donde Suricata deposita las alertas de las alarmas. (Sugerencia)Reiniciar el servidor ossec como el agente ossec, cada vez que se realice cambios.
 
 Al descargar suricata parece este error:
 
