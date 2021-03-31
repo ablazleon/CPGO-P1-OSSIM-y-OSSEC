@@ -51,7 +51,13 @@ Se realiza un ping y se abre el dashboard de ossim en el agetne, para comprobar 
 
 ## b. Descargar el agente ossec para la maquina agente y realizar la configuración entre el agente y el servidor OSSEC para permitir el envío de logs
 
+- jailbreak teh system and add an agent
 
+https://www.ossec.net/docs/manual/agent/index.html
+
+- configure the agent
+
+- isntall osse server
 
 ## c. Configurar correctamente el agente OSSEC en su correspondiente fichero de configuración, (indicando el formato de logs que debe monitorizar), y la ubicación del fichero fast.log donde Suricata deposita las alertas de las alarmas. (Sugerencia)Reiniciar el servidor ossec como el agente ossec, cada vez que se realice cambios.
 
