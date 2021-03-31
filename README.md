@@ -5,7 +5,7 @@ Autores:
 - Jose Miguel Del Valle Salas
 - Adrián Blázquez León
 
-En este repo, documentamos cómo hemos planteado realizar esta prática
+En este repo, documentamos cómo hemos planteado realizar esta práctica
 
 # 1- Configurar escenario
 # 2- Prueba de funcionamiento del escenario
@@ -55,7 +55,6 @@ Se realiza un ping y se abre el dashboard de ossim en el agetne, para comprobar 
 
 https://www.ossec.net/docs/manual/agent/index.html
 
-
 ```
 Starting shell
 alienvault:~# /var/ossec/bin/manage_agents 
@@ -81,9 +80,7 @@ MDAxIHVidW50dTE4IDE5Mi4xNjguNTYuMTAyIDhkMjJjYzY4YjQwZTc5ZmQ4MzZmNzVkZTNhODRlOGY0
 
 ** Press ENTER to return to the main menu.
 ```
-
 - configure the agent
-
 
 ```
 sudo /var/ossec/bin/manage_agents
@@ -105,7 +102,18 @@ Paste it here (or '\q' to quit): MDAxIHVidW50dTE4IDE5Mi4xNjguNTYuMTAyIDhkMjJjYzY
 
 ```
 
-- isntall osse server
+After this, it appears some error about no file in ossec/queue/rids. To solve this is repeated teh importing in the agent, afeter creating an empty file called sender
+
+```
+root@ubuntu-VirtualBox:/var/ossec# cd queue/rids/
+root@ubuntu-VirtualBox:/var/ossec/queue/rids# ls
+root@ubuntu-VirtualBox:/var/ossec/queue/rids# nano sender
+root@ubuntu-VirtualBox:/var/ossec/queue/rids# ls
+sender
+root@ubuntu-VirtualBox:/var/ossec/queue/rids# cd /var/ossec/bin/manage_agents 
+bash: cd: /var/ossec/bin/manage_agents: Not a directory
+root@ubuntu-VirtualBox:/var/ossec/queue/rids# /var/ossec/bin/manage_agents 
+```
 
 ## c. Configurar correctamente el agente OSSEC en su correspondiente fichero de configuración, (indicando el formato de logs que debe monitorizar), y la ubicación del fichero fast.log donde Suricata deposita las alertas de las alarmas. (Sugerencia)Reiniciar el servidor ossec como el agente ossec, cada vez que se realice cambios.
 
