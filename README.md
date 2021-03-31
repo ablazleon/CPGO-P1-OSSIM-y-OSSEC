@@ -149,6 +149,8 @@ sudo apt-get install ossec-hids-agent
 Then, it is changed the ip in the agent ossec:
 
 ```
+root@ubuntu-VirtualBox:/var/ossec/etc# nano ossec.conf 
+
 <!-- OSSEC example config -->
 
 <ossec_config>
