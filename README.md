@@ -83,6 +83,17 @@ MDAxIHVidW50dTE4IDE5Mi4xNjguNTYuMTAyIDhkMjJjYzY4YjQwZTc5ZmQ4MzZmNzVkZTNhODRlOGY0
 - configure the agent
 
 ```
+# Add Apt sources.lst
+wget -q -O - https://updates.atomicorp.com/installers/atomic | sudo bash
+
+ # Update apt data
+ sudo apt-get update
+
+# Agent
+sudo apt-get install ossec-hids-agent
+```
+
+```
 sudo /var/ossec/bin/manage_agents
 
 
@@ -135,16 +146,6 @@ sudo apt-get update
 sudo apt-get install suricata 
 ```
 
-```
-# Add Apt sources.lst
-wget -q -O - https://updates.atomicorp.com/installers/atomic | sudo bash
-
- # Update apt data
- sudo apt-get update
-
-# Agent
-sudo apt-get install ossec-hids-agent
-```
 
 Then, it is changed the ip in the agent ossec:
 
