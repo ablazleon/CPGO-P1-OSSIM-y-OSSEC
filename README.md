@@ -160,7 +160,6 @@ root@ubuntu-VirtualBox:/var/ossec/etc# nano ossec.conf
   </client>
 
 ```
-
 Then, agent and server machines are reboot.
 
 2- Prueba de funcionamiento del escenario
