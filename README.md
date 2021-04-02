@@ -126,6 +126,10 @@ bash: cd: /var/ossec/bin/manage_agents: Not a directory
 root@ubuntu-VirtualBox:/var/ossec/queue/rids# /var/ossec/bin/manage_agents 
 ```
 
+After this way, it's checked that it does not work, it is follwoed the followign tutorial. Then is apprecitaed that it appers the status active:
+
+https://blog.ichasco.com/ossim-instalar-un-agente-en-linux/
+
 ## c. Configurar correctamente el agente OSSEC en su correspondiente fichero de configuración, (indicando el formato de logs que debe monitorizar), y la ubicación del fichero fast.log donde Suricata deposita las alertas de las alarmas. (Sugerencia)Reiniciar el servidor ossec como el agente ossec, cada vez que se realice cambios.
 
 Al descargar suricata parece este error:
