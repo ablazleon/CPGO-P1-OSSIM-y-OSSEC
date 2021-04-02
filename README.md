@@ -240,6 +240,11 @@ Se compreuba que aparecen en el fichero /etc/suricata/fast.log
 
 CLaro, nótese que dónde se jecuta el pcap es donde aprece el fast.log, y este directorio es el que tiene que estar logado en ossec.conf
 
+
+A otniución, se observa en las imágenes como la primera vez que se ejecuta suricata aparece una alerta, y la segunda eventos.
+
+
+
 En la consola en Analysis > SIEM debe aprecer eso
 
 
