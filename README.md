@@ -169,6 +169,40 @@ En el suricata.yaml se añade la ip de la red 192.168.1.0/8
 
 Después se ejecuta el pcap en suricata:
 
+```
+root@ubuntu-VirtualBox:/home/ubuntu/Documents# sudo suricata -c /etc/suricata/suricata.yaml -r /home/ubuntu/Documents/2016-08-16-Neutrino-EK.pcap 
+2/4/2021 -- 14:00:55 - <Notice> - This is Suricata version 6.0.2 RELEASE running in USER mode
+2/4/2021 -- 14:00:55 - <Warning> - [ERRCODE: SC_ERR_NO_RULES(42)] - No rule files match the pattern /var/lib/suricata/rules/suricata.rules
+2/4/2021 -- 14:00:55 - <Warning> - [ERRCODE: SC_ERR_NO_RULES_LOADED(43)] - 1 rule files specified, but no rules were loaded!
+2/4/2021 -- 14:00:55 - <Notice> - all 3 packet processing threads, 4 management threads initialized, engine started.
+2/4/2021 -- 14:00:55 - <Notice> - Signal Received.  Stopping engine.
+2/4/2021 -- 14:00:55 - <Notice> - Pcap-file module read 1 files, 692 packets, 546542 bytes
+
+```
+
+Beacus eof the error certain rules are defined: Based on this article
+https://alibaba-cloud.medium.com/how-to-install-suricata-ids-on-ubuntu-16-04-b6dcca70472c
+
+```
+ls  /etc/suricata/rules
+nano /etc/suricata/suricata.yaml
+
+HOME_NET: "[192.168.0.0/16]"
+EXTERNAL_NET: "!$HOME_NET"
+
+nano /etc/suricata/rules/my.rules
+
+alert icmp any any -> $HOME_NET any (msg:"ICMP connection attempt"; sid:1000002; rev:1;) 
+alert tcp any any -> $HOME_NET 22 (msg:"SSH connection attempt"; sid:1000003; rev:1;)
+alert tcp any any -> $HOME_NET 80 (msg:"DOS Unusually fast port 80 SYN packets outbound, Potential DOS"; flags: S,12; threshold: type both, track by_dst, count 500, seconds 5; classtype:misc-activity; sid:6;)
+
+nano /etc/suricata/suricata.yaml
+
+- my.rules
+```
+
+
+
 En la consola en Analysis > SIEM debe aprecer eso
 
 
