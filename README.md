@@ -289,7 +289,8 @@ regla 1
 7003
 20101
 
-
-
 4- Configuración de agentes de operación
+
+En la pantalla de administración a crear usuario operador.
+
 
