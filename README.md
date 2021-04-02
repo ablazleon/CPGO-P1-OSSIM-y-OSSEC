@@ -165,9 +165,13 @@ root@ubuntu-VirtualBox:/var/ossec/etc# nano ossec.conf
 ```
 Then, agent and server services are reboot
 
+En el suricata.yaml se añade la ip de la red 192.168.1.0/8
+
 Después se ejecuta el pcap en suricata:
 
 En la consola en Analysis > SIEM debe aprecer eso
+
+
 
 2- Prueba de funcionamiento del escenario
 
