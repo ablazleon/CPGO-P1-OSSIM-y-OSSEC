@@ -243,14 +243,28 @@ CLaro, nótese que dónde se jecuta el pcap es donde aprece el fast.log, y este 
 
 A cotniución, se observa en las imágenes como la primera vez que se ejecuta suricata aparece una alerta, y la segunda eventos.
 
+En la consola en Analysis > SIEM
+
 ![SIEM alerta](https://github.com/ablazleon/CPGO-P1-OSSIM-y-OSSEC/blob/main/13a4ba7a-924f-4d52-8159-4fae874bd171.jpg)
 ![SIEM eventos](https://github.com/ablazleon/CPGO-P1-OSSIM-y-OSSEC/blob/main/2c11db1e-d2a5-4ac9-b94e-c17101e039eb.jpg)
 
-En la consola en Analysis > SIEM debe aprecer eso
-
-
 
 2- Prueba de funcionamiento del escenario
+
+Las capturas que se han realziado antes, prvienen de hacer la prueba, comprobando que dispara una alerta en el fast.log
+
+```
+08/16/2016-22:41:59.586501  [**] [1:2018216:5] ET INFO HTTP Connection To DDNS Domain Hopto.org [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 192.168.4.202:55404 -> 83.217.27.178:80
+08/16/2016-22:42:00.182956  [**] [1:2022962:4] ET EXPLOIT_KIT Evil Redirector Leading to EK Jul 12 2016 [**] [Classification: Exploit Kit Activity Detected] [Priority: 1] {TCP} 83.217.27.178:80 -> 192.16$
+08/16/2016-22:42:03.025192  [**] [1:2014726:127] ET POLICY Outdated Flash Version M1 [**] [Classification: Potential Corporate Privacy Violation] [Priority: 1] {TCP} 192.168.4.202:55416 -> 74.208.103.8:80
+08/16/2016-22:42:03.025474  [**] [1:2031747:1] ET HUNTING Observed Interesting Content-Type Inbound (application/x-sh) [**] [Classification: Potential Corporate Privacy Violation] [Priority: 1] {TCP} 74.$
+08/16/2016-22:42:09.866279  [**] [1:2031747:1] ET HUNTING Observed Interesting Content-Type Inbound (application/x-sh) [**] [Classification: Potential Corporate Privacy Violation] [Priority: 1] {TCP} 74.$
+08/16/2016-22:41:59.586501  [**] [1:2018216:5] ET INFO HTTP Connection To DDNS Domain Hopto.org [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 192.168.4.202:55404 -> 83.217.27.178:80
+08/16/2016-22:42:00.182956  [**] [1:2022962:4] ET EXPLOIT_KIT Evil Redirector Leading to EK Jul 12 2016 [**] [Classification: Exploit Kit Activity Detected] [Priority: 1] {TCP} 83.217.27.178:80 -> 192.16$
+08/16/2016-22:42:03.025192  [**] [1:2014726:127] ET POLICY Outdated Flash Version M1 [**] [Classification: Potential Corporate Privacy Violation] [Priority: 1] {TCP} 192.168.4.202:55416 -> 74.208.103.8:80
+08/16/2016-22:42:03.025474  [**] [1:2031747:1] ET HUNTING Observed Interesting Content-Type Inbound (application/x-sh) [**] [Classification: Potential Corporate Privacy Violation] [Priority: 1] {TCP} 74.$
+08/16/2016-22:42:09.866279  [**] [1:2031747:1] ET HUNTING Observed Interesting Content-Type Inbound (application/x-sh) [**] [Classification: Potential 
+```
 
 3- Creación de directivas de correlación
 
