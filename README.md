@@ -151,7 +151,6 @@ sudo apt-get install suricata
 ```
 
 
-Then, it is changed the ip in the agent ossec:
 
 ```
 root@ubuntu-VirtualBox:/var/ossec/etc# nano ossec.conf 
@@ -164,7 +163,11 @@ root@ubuntu-VirtualBox:/var/ossec/etc# nano ossec.conf
   </client>
 
 ```
-Then, agent and server machines are reboot.
+Then, agent and server services are reboot
+
+Después se ejecuta el pcap en suricata:
+
+En la consola en Analysis > SIEM debe aprecer eso
 
 2- Prueba de funcionamiento del escenario
 
