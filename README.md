@@ -211,7 +211,16 @@ root@ubuntu-VirtualBox:/home/ubuntu/Documents# sudo suricata -c /etc/suricata/su
 
 ```
 
+AL escribri el comadno así, el fast.log se queda en docuemtns, por lo que hay que modificar el ossec.conf
 
+
+```
+  <localfile>
+    <log_format>snort-full</log_format>
+    <location>/home/ubuntu/Documents/fast.log</location>
+  </localfile>
+
+```
 
 En la consola en Analysis > SIEM debe aprecer eso
 
