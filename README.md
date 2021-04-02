@@ -199,6 +199,16 @@ alert tcp any any -> $HOME_NET 80 (msg:"DOS Unusually fast port 80 SYN packets o
 nano /etc/suricata/suricata.yaml
 
 - my.rules
+
+root@ubuntu-VirtualBox:/home/ubuntu/Documents# sudo suricata -c /etc/suricata/suricata.yaml -r /home/ubuntu/Documents/2016-08-16-Neutrino-EK.pcap 
+2/4/2021 -- 14:10:00 - <Notice> - This is Suricata version 6.0.2 RELEASE running in USER mode
+2/4/2021 -- 14:10:00 - <Warning> - [ERRCODE: SC_ERR_NO_RULES(42)] - No rule files match the pattern /var/lib/suricata/rules/suricata.rules
+2/4/2021 -- 14:10:00 - <Warning> - [ERRCODE: SC_ERR_NO_RULES(42)] - No rule files match the pattern /var/lib/suricata/rules/my.rules
+2/4/2021 -- 14:10:00 - <Warning> - [ERRCODE: SC_ERR_NO_RULES_LOADED(43)] - 2 rule files specified, but no rules were loaded!
+2/4/2021 -- 14:10:00 - <Notice> - all 3 packet processing threads, 4 management threads initialized, engine started.
+2/4/2021 -- 14:10:00 - <Notice> - Signal Received.  Stopping engine.
+2/4/2021 -- 14:10:00 - <Notice> - Pcap-file module read 1 files, 692 packets, 546542 bytes
+
 ```
 
 
