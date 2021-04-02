@@ -220,6 +220,10 @@ AL escribri el comadno así, el fast.log se queda en docuemtns, por lo que hay q
     <location>/home/ubuntu/Documents/fast.log</location>
   </localfile>
 
+
+/var/ossec/bin/ossec-control restart
+
+
 ```
 
 En la consola en Analysis > SIEM debe aprecer eso
