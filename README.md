@@ -217,7 +217,7 @@ AL escribri el comadno así, el fast.log se queda en docuemtns, por lo que hay q
 ```
   <localfile>
     <log_format>snort-full</log_format>
-    <location>/home/ubuntu/Documents/fast.log</location>
+    <location>/etc/suricata/fast.log</location>
   </localfile>
 
 
@@ -235,6 +235,9 @@ sudo suricata-update
 Después se ejcuta dos veces suricata con el pcap que permite simular compartamiento mailciono en la red
 
 sudo suricata -c /etc/suricata/suricata.yaml -r /home/ubuntu/Documents/2016-08-16-Neutrino-EK.pcap
+
+Se compreuba que aparecen en el fichero /etc/suricata/fast.log
+
 
 
 En la consola en Analysis > SIEM debe aprecer eso
