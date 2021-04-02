@@ -28,6 +28,7 @@ Primero, pensamos en crear una subred interna para conectar el agente con OSSIM,
 
 - Se cambia la ip del adaptador ethernet de la máquina real:
 
+
 192.168.56.101
 Servidor de dns:212.166.210.80
 
