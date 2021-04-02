@@ -232,6 +232,11 @@ Aún así, dice suricata que falta actualizar las reglas
 sudo suricata-update
 ```
 
+Después se ejcuta dos veces suricata con el pcap que permite simular compartamiento mailciono en la red
+
+sudo suricata -c /etc/suricata/suricata.yaml -r /home/ubuntu/Documents/2016-08-16-Neutrino-EK.pcap
+
+
 En la consola en Analysis > SIEM debe aprecer eso
 
 
