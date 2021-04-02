@@ -268,5 +268,28 @@ Las capturas que se han realziado antes, prvienen de hacer la prueba, comproband
 
 3- Creación de directivas de correlación
 
+Para probar esta funcionalidad se propone crear unas directivas de correlación muy simples que
+disparen una alarma cuando se hayan dado 2 o más ocurrencias de uno de los eventos anteriores
+en menos de 1 minuto. Escoge una de las alertas que genera Suricata al pasarle el pcap con
+contenido malicioso y crea la/s directivas de correlación adecuadas. Si está/n correctamente
+creadas, al generar 2 o más alertas de Suricata (inyectándole el fichero malicioso 2 o más veces)
+se disparará un evento nuevo y una alerta en OSSIM.
+Así, la primera ejecución de suricata con el pcap desde la máquina agente no disparará ninguna
+alarma. Con la segunda ejecución, deberá aparecer la alarma creada por el alumno.
+
+Se configura esta directa en Configuración > Open Threat Intelligence > Directive
+
+Regla 1
+Explotation and installation
+Maliciuos Website
+Uno
+
+3
+regla 1
+7003
+20101
+
+
+
 4- Configuración de agentes de operación
 
