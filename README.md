@@ -226,6 +226,12 @@ AL escribri el comadno así, el fast.log se queda en docuemtns, por lo que hay q
 
 ```
 
+Aún así, dice suricata que falta actualizar las reglas
+
+```
+sudo suricata-update
+```
+
 En la consola en Analysis > SIEM debe aprecer eso
 
 
