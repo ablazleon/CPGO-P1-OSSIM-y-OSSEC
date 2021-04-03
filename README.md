@@ -237,6 +237,8 @@ Después se ejcuta dos veces suricata con el pcap que permite simular compartami
 
 sudo suricata -c /etc/suricata/suricata.yaml -r /home/ubuntu/Documents/2016-08-16-Neutrino-EK.pcap
 
+Con menos -l se pondría el sitio por defecto para lso logs
+
 Se compreuba que aparecen en el fichero /etc/suricata/fast.log
 
 CLaro, nótese que dónde se jecuta el pcap es donde aprece el fast.log, y este directorio es el que tiene que estar logado en ossec.conf
