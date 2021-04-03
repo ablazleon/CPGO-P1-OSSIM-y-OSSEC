@@ -294,4 +294,6 @@ regla 1
 
 En la pantalla de administración a crear usuario operador.
 
+Se crea un operador. Se le da permissos para acceder al ticket.
+
 
