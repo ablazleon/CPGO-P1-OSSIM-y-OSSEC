@@ -282,6 +282,8 @@ alarma. Con la segunda ejecución, deberá aparecer la alarma creada por el alum
 
 Se configura esta directa en Configuración > Open Threat Intelligence > Directive
 
+It is found form the real time whcih details they are and from it it is configured the desired correlation directive.
+
 Regla 1
 Explotation and installation
 Maliciuos Website
@@ -291,6 +293,8 @@ Uno
 regla 1
 7003
 20101
+
+Se comprueba quecuando se ejcuta dos veces el fichero pcap. Nótese que por ello, depsués de que se ejecuten dos veces seguidas el fichero pcap, esta segunda vez tiene que tardar menso que un minuto. Se prueba a reiniciar la mv.
 
 4- Configuración de agentes de operación
 
