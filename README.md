@@ -294,7 +294,7 @@ regla 1
 7003
 20101
 
-Se comprueba quecuando se ejcuta dos veces el fichero pcap. Nótese que por ello, depsués de que se ejecuten dos veces seguidas el fichero pcap, esta segunda vez tiene que tardar menso que un minuto. Se prueba a reiniciar la mv.
+Se comprueba quecuando se ejcuta dos veces el fichero pcap. Nótese que por ello, depsués de que se ejecuten dos veces seguidas el fichero pcap, esta segunda vez tiene que tardar menso que un minuto. Se carga la directiva.
 
 4- Configuración de agentes de operación
 
