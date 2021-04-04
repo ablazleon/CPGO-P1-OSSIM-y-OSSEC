@@ -5,7 +5,9 @@ Autores:
 - Jose Miguel Del Valle Salas
 - Adrián Blázquez León
 
-En este repo, documentamos cómo hemos planteado realizar esta práctica
+En este repo, documentamos cómo hemos planteado realizar esta práctica. A continuación una pequeña demo:
+
+https://www.youtube.com/watch?v=ElDoEgs9kSI&t=1s
 
 # 1- Configurar escenario
 # 2- Prueba de funcionamiento del escenario
