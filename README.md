@@ -302,4 +302,8 @@ En la pantalla de administración a crear usuario operador.
 
 Se crea un operador. Se le da permissos para acceder al ticket.
 
+=> regla de correlación adiocional:
+
+como tarda bastatne, una directiva 2 de forma de que con occurencia 1 sale si en menos de tres minutos
+
 
