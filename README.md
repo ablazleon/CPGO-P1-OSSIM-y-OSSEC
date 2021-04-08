@@ -308,4 +308,4 @@ Se crea un operador. Se le da permissos para acceder al ticket.
 
 como tarda bastatne, una directiva 2 de forma de que con occurencia 1 sale si en menos de tres minutos
 
-
+el api key de otx no fucniona
